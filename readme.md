@@ -3,6 +3,22 @@
 chatgptから返ってくる文章は,GitHubのmarkdownで上手く表示されません。  
 適切な位置に空白を挿入し、GitHubのmarkdownで上手く表示されるようにしています。
 
+## usage
+
+```bash
+go run main.go
+```
+
+標準では、in.mdを読み込み、out.mdに書き出します。  
+ファイル名を指定することもできます。  
+既に存在するファイルとして出力ファイルが与えられると、そのファイルの末尾に追記されます。
+
+```bash
+go run main.go -in before.md -out after.md
+```
+
+
+## example
 
 ---
 
