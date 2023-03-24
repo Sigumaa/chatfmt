@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	filename := flag.String("file", "in.md", "File to read from")
-	output := flag.String("output", "out.md", "File to write to")
+	filename := flag.String("in", "in.md", "File to read from")
+	output := flag.String("out", "out.md", "File to write to")
 	flag.Parse()
 
 	if err := readText(*filename, *output); err != nil {
